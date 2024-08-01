@@ -27,10 +27,10 @@ const App = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50 md:flex-row">
+    <div className="flex flex-col min-h-screen bg-gray-50">
       {/* Random Quote Section */}
-      <div className="fixed top-0 left-0 w-full md:w-1/3 bg-gray-100 border-b md:border-r border-gray-300 h-auto md:h-full p-4 overflow-y-auto z-0">
-        <h1 className="text-2xl font-bold text-gray-800 mb-6 text-center md:text-left">Random Quote</h1>
+      <div className="fixed top-0 left-0 w-full bg-gray-100 border-b border-gray-300 p-4 overflow-y-auto z-10 md:w-1/3 md:h-full">
+        <h1 className="text-2xl font-bold text-gray-800 mb-6 text-center">Random Quote</h1>
         <QuoteCard quote={quote} onSave={handleSaveQuote} />
         <div className="flex justify-end mt-4">
           <button
@@ -43,9 +43,9 @@ const App = () => {
       </div>
 
       {/* Saved Quotes Section */}
-      <div className="flex-1 ml-0 md:ml-[33.33%] p-4 mt-96  md:mt-0">
+      <div className="flex-1 p-4 mt-96 md:mt-0 md:ml-[33.33%] overflow-y-auto">
         <h2 className="text-2xl font-semibold text-gray-700 mb-4">Saved Quotes</h2>
-        <div className="max-w-full overflow-y-auto h-screen">
+        <div className="max-w-full h-screen">
           <QuoteList quotes={savedQuotes} />
         </div>
       </div>
