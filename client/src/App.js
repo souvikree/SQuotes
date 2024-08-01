@@ -43,7 +43,7 @@ const App = () => {
       </div>
 
       {/* Saved Quotes Section */}
-      <div className="flex-1 ml-0 md:ml-[33.33%] p-4 mt-64 md:mt-0">
+      <div className="flex-1 ml-0 md:ml-[33.33%] p-4 mt-96  md:mt-0">
         <h2 className="text-2xl font-semibold text-gray-700 mb-4">Saved Quotes</h2>
         <div className="max-w-full overflow-y-auto h-screen">
           <QuoteList quotes={savedQuotes} />
